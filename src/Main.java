@@ -1,15 +1,159 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+public class Main{
+    public static void main (String[] args){
+/// //////--------------------------------EJ1---------------------------------
+      ej1 cancion1 = new ej1();
+      ej1 cancion2 = new ej1();
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+      cancion1.setTitulo("Bohemian Rhapsody");
+      cancion1.setArtista("Freddy Mercury");
+      cancion1.setDuracion(2);
+
+      cancion2.setTitulo("Murder");
+      cancion2.setArtista("Duki");
+      cancion2.setDuracion(3);
+        System.out.println("\n\n--EJ1--");
+
+      System.out.println("El nombre de la cancion 1 es: " + cancion1.getTitulo());
+      System.out.println("Cantada por el gran: " + cancion1.getArtista() );
+      System.out.println("Tiene una duración de: " + cancion1.getDuracion() + "min");
+
+        System.out.println("\nEl nombre de la cancion 2 es: " + cancion2.getTitulo());
+        System.out.println("Cantada por el gran: " + cancion2.getArtista() );
+        System.out.println("Tiene una duración de: " + cancion2.getDuracion() + "min");
+
+        cancion1.setDuracion(5);
+
+        System.out.println();
+        System.out.println("Nueva duración de" + cancion1.getTitulo() + " : " + cancion1.getDuracion());
+
+        System.out.println();
+
+        if (cancion1.getDuracion()> cancion2.getDuracion()){
+            System.out.println(cancion1.getTitulo()+ " tiene una duración mayor");
+        } else if (cancion2.getDuracion()>cancion1.getDuracion())  {
+            System.out.println(cancion2.getTitulo()+ " tiene una duración mayor");
         }
+        System.out.println("---------------");
+    /// --------------------------EJ2--------------------------
+
+        ej2 pelicula1 = new ej2();
+
+        pelicula1.setTitulo("Cumback");
+        pelicula1.setArtista("Pedro Sánchez");
+        pelicula1.setEstreno(2067);
+        pelicula1.setMin(67);
+        System.out.println("\n\n\n\n--EJ2--");
+
+        System.out.println("-----------CARTELERA-----------");
+        System.out.println(pelicula1.getTitulo() + " es la película más esperada de la historia, con el famoso artista "
+                + pelicula1.getArtista() + ". " + "Se estrena en " + pelicula1.getEstreno() + " y tendrá una duración de " + pelicula1.getMin() + " minutos." );
+
+        pelicula1.setArtista(pelicula1.getArtista().toUpperCase());
+        System.out.println("\n Director Principal-Dr " + pelicula1.getArtista());
+
+        System.out.println("-------------------------------");
+
+        /// ----------------------EJ3---------------------------
+
+        ej3 yt1 = new ej3();
+        ej3 yt2 = new ej3();
+        ej3 yt3 = new ej3();
+
+        yt1.setCanal("Lolito");
+        yt1.setCategoria("Fortnite");
+        yt1.setSubs(8);
+
+        yt2.setCanal("Vegeta");
+        yt2.setCategoria("Minecraft");
+        yt2.setSubs(40);
+
+        yt3.setCanal("Tfue");
+        yt3.setCategoria("Pesca");
+        yt3.setSubs(12);
+
+        System.out.println("\n\n--EJ3--");
+        System.out.println("YOUTUBE");
+        System.out.println( yt1.getCanal() + " sube contenido relacionado con "
+                + yt1.getCategoria() + " y además tiene " +yt1.getSubs() + " millones de subscriptores.");
+        System.out.println( yt2.getCanal() + " sube contenido relacionado con "
+                + yt2.getCategoria() + " y además tiene " +yt2.getSubs() + " millones de subscriptores.");
+        System.out.println( yt3.getCanal() + " sube contenido relacionado con "
+                + yt3.getCategoria() + " y además tiene " +yt3.getSubs() + " millones de subscriptores.");
+        System.out.println("");
+
+        yt2.setSubs(45);
+        System.out.println(yt2.getCanal() + " esta cada vez más cerca de 50m al subir a " + yt2.getSubs() + " millones de subs.");
+        System.out.println("----------");
+
+/// //-------------------------EJ4--------------------------
+
+        ej4 jugador = new ej4();
+
+        jugador.setNombre("CR7");
+        jugador.setEquipo("Real Madrid");
+        jugador.setPosicion("Delantero");
+        jugador.setDorsal(7);
+
+        System.out.println("\n\n ----EJ4---");
+        System.out.println("Fútbol");
+        System.out.println("El gran " + jugador.getNombre()
+                + " con el número " + jugador.getDorsal() + " en la espalda," + "es "
+                + jugador.getPosicion() + " y juega en el " + jugador.getEquipo() + ".");
+
+        System.out.println("---Cambio equipo y dorsal---");
+        jugador.setDorsal(9);
+        jugador.setEquipo("Al-Nassr");
+        System.out.println(jugador.getNombre() + "se ha cambiado al " + jugador.getEquipo() + " y su nuevo número es " + jugador.getDorsal() + ".");
+        System.out.println("---------------------");
+
+
+
+//-----------------EJ5-------------------------
+        System.out.println("\n\n--EJ5--");
+
+        ej5 skin1 = new ej5();
+        ej5 skin2 = new ej5();
+
+        skin1.setNombre("Cuervo");
+        skin1.setPrecio(2000);
+        skin1.setRareza("Legendaria");
+        skin1.setVideojuego("Fortnite");
+
+        skin2.setNombre("Reaver");
+        skin2.setPrecio(1750);
+        skin2.setRareza("Rojo");
+        skin2.setVideojuego("Valorant");
+
+        System.out.println("(Skin) = " + skin1.getNombre() + " , (Rareza) = "
+                + skin1.getRareza() + " , (Videojuego) = " + skin1.getVideojuego() + " , (Precio) = " +  skin1.getPrecio());
+
+        System.out.println("(Skin) = " + skin2.getNombre() + " , (Rareza) = "
+                + skin2.getRareza() + " , (Videojuego) = " + skin2.getVideojuego() + " , (Precio) = " +  skin2.getPrecio());
+
+        System.out.println("\nCambio de precio y rareza");
+        skin1.setPrecio(10000);
+        skin1.setRareza("Exclusiva");
+        System.out.println("(Precio nuevo) = " + skin1.getPrecio() + " (Rareza nueva) = " + skin1.getRareza());
+        System.out.println("-------------------------------");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
