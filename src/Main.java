@@ -136,6 +136,122 @@ public class Main{
         System.out.println("(Precio nuevo) = " + skin1.getPrecio() + " (Rareza nueva) = " + skin1.getRareza());
         System.out.println("-------------------------------");
 
+        //----------------EJ6--------------------
+        System.out.println("\n\n--POKEMON-EJ6--");
+
+        ej6 pokemon1 = new ej6();
+
+        pokemon1.setNombre("Charmander");
+        pokemon1.setTipo("Fuego");
+        pokemon1.setNivel(5);
+        pokemon1.setVida(100);
+
+        System.out.println("(Nombre) = " + pokemon1.getNombre() +
+                " , (Tipo) = " + pokemon1.getTipo() +
+                " , (Nivel) = " + pokemon1.getNivel() +
+                " , (Vida) = " + pokemon1.getVida());
+
+        System.out.println("\nCambio de nivel y vida");
+        pokemon1.setNivel(10);
+        pokemon1.setVida(80);
+
+        System.out.println("(Nivel nuevo) = " + pokemon1.getNivel() +
+                " , (Vida nueva) = " + pokemon1.getVida());
+
+        System.out.println("-------------------------------");
+
+        //----------------EJ7------------------------
+
+        System.out.println("\n\n--MANGA--");
+
+        ej7 manga1 = new ej7();
+
+        manga1.setTitulo("Attack on Titan");
+        manga1.setAutor("Hajime Isayama");
+        manga1.setNumeroVolumen(1);
+        manga1.setLeido(false);
+
+        System.out.println("(Título) = " + manga1.getTitulo() +
+                " , (Autor) = " + manga1.getAutor() +
+                " , (Volumen) = " + manga1.getNumeroVolumen() +
+                " , (Leído) = " + manga1.isLeido());
+
+        System.out.println("\nMarcando manga como leído...");
+        manga1.setLeido(true);
+
+        System.out.println("(Leído ahora) = " + manga1.isLeido());
+        System.out.println("-------------------------------");
+
+        //----------------------EJ8------------------------
+
+        System.out.println("\n\n--EQUIPO ESPORTS--");
+
+        ej8 equipo1 = new ej8();
+
+        equipo1.setNombre("G2 Esports");
+        equipo1.setJuego("League of Legends");
+        equipo1.setPais("España");
+        equipo1.setRankingMundial(5);
+
+        System.out.println("(Equipo) = " + equipo1.getNombre() +
+                " , (Juego) = " + equipo1.getJuego() +
+                " , (País) = " + equipo1.getPais() +
+                " , (Ranking) = " + equipo1.getRankingMundial());
+
+        System.out.println("\nCambio de ranking mundial...");
+        equipo1.setRankingMundial(2);
+
+        System.out.println("(Ranking nuevo) = " + equipo1.getRankingMundial());
+        System.out.println("-------------------------------");
+
+        //---------------------EJ9--------------------
+
+        System.out.println("\n\n--CANCION STATS-EJ9--");
+        ej9 cancion = new ej9();
+
+        cancion.setTitulo("HOLA");
+        cancion.setReps(0);
+
+        for (int i = 0; i< 5;i++){
+            cancion.reps();
+        }
+
+        System.out.println("(Canción) = " + cancion.getTitulo() +
+                " , (Reproducciones totales) = " + cancion.getReps());
+
+        System.out.println("-------------------------------");
+
+        //--------------------------EJ10---------------------------
+
+        System.out.println("\n\n--PARTIDO--");
+
+        ej10 partido1 = new ej10();
+
+        partido1.setEquipoLocal("Barcelona");
+        partido1.setEquipoVisitante("Real Madrid");
+
+
+        partido1.golLocal();
+        partido1.golVisitante();
+        partido1.golLocal();
+        partido1.golLocal();
+
+        System.out.println("(Equipo Local) = " + partido1.getEquipoLocal());
+        System.out.println("(Equipo Visitante) = " + partido1.getEquipoVisitante());
+        System.out.println("(Resultado Final) = " + partido1.resultado());
+
+        System.out.println("-------------------------------");
+
+
+
+
+
+
+
+
+
+
+
 
 
 
