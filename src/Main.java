@@ -243,6 +243,68 @@ public class Main{
         System.out.println("-------------------------------");
 
 
+        //---------------------------EJ11---------------------------------
+
+        System.out.println("\n\n--EJ11--");
+
+        ej11 bateria = new ej11();
+        bateria.setPorcentaje(60);
+
+        System.out.println("Usted tiene " + bateria.getPorcentaje() + " de batería.");
+
+        System.out.println("\n Jugando...");
+        bateria.usar(40);
+        System.out.println("Batería restante = " + bateria.getPorcentaje() + "%");
+
+        System.out.println("\n Cargando...");
+        bateria.cargar(20);
+        System.out.println("Se ha restaurado hasta " + bateria.getPorcentaje() + " % de batería.");
+
+        System.out.println("---------------------");
+
+        //---------------------EJ12-------------------------
+        System.out.println("\n\n--EJ12--");
+        System.out.println(" BATALLA FORTNITE");
+
+        ej12 tu = new ej12();
+        tu.setNombre("neiragus");
+        tu.setAtaque(80);
+        tu.setVida(100);
+
+        ej12 opp = new ej12();
+        opp.setNombre("Tfue");
+        opp.setVida(100);
+        opp.setAtaque(33);
+
+        System.out.println("\n El jugador " + tu.getNombre() + " tiene " + tu.getVida() + " puntos de vida.");
+        System.out.println(" El jugador " + opp.getNombre() + " tiene " + opp.getVida() + " puntos de vida.");
+
+        System.out.println("\n Primer PVP");
+        opp.recibirHit(tu.getAtaque());
+        System.out.println(tu.getNombre() + " acaba de quitar "
+                + tu.getAtaque() + " puntos de vida a " + opp.getNombre() + "." + opp.getNombre() + " se queda a " + opp.getVida() );
+
+        tu.recibirHit(opp.getAtaque());
+        System.out.println("Recibes " + opp.getAtaque() +" de daño " + "de " + opp.getNombre() + "." + " Te quedas a " + tu.getVida());
+
+        System.out.println("\n--Ronda 2: Héroe se cura--");
+        tu.curarse(10);
+        System.out.println(tu.getNombre() + " se cura 10 puntos. Vida = " + tu.getVida());
+
+        System.out.println("\n--Estado final--");
+        System.out.println(tu.getNombre() + " está vivo? " + tu.estaVivo());
+        System.out.println(opp.getNombre() + " está vivo? " + opp.estaVivo());
+        System.out.println("-------------------------------");
+
+
+
+
+
+
+
+
+
+
 
 
 
