@@ -296,42 +296,24 @@ public class Main{
         System.out.println(opp.getNombre() + " está vivo? " + opp.estaVivo());
         System.out.println("-------------------------------");
 
+        //------------------------EJ13-------------------------
+
+        System.out.println("\n\n--EJ13--");
+
+        ej13 carrito1 = new ej13();
+
+        carrito1.añadirProducto(50.0);
+        carrito1.añadirProducto(20.0);
+        carrito1.añadirProducto(17.0);
+
+        System.out.println("Sin descuento = " + carrito1.getTotal());
+
+        carrito1.aplicarDescuento(20);
+
+        System.out.println("Total después del 10% de descuento = $" + carrito1.getTotal());
+        System.out.println("-----------------------");
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        
     }
 }
