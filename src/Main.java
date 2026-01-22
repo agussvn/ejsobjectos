@@ -314,6 +314,69 @@ public class Main{
         System.out.println("-----------------------");
 
 
-        
+        //------------------------EJ14---------------------------------
+
+        System.out.println("\n\n--EJ14--");
+        System.out.println("-POPULARIDAD");
+
+        ej14 pop = new ej14();
+        pop.setTitulo("Sahur");
+        pop.setLikes(8);
+        pop.setDislikes(4);
+
+        System.out.println(pop.getTitulo() + " tiene " + pop.getLikes() + " likes y " + pop.getDislikes() + " dislikes.");
+        System.out.println("Veremos si aumenta y la popularidad mañana");
+
+        pop.darLike();
+        pop.darLike();
+        pop.darLike();
+        pop.darDislike();
+        pop.darDislike();
+
+
+        System.out.println(pop.getTitulo() + " tiene una popularidad de " + pop.getFinal());
+        System.out.println("-------------------");
+
+
+        //-------------------------------EJ15------------------------------
+
+        System.out.println("\n\n--EJ15--");
+        System.out.println("-JUEGO-");
+
+        ej15 game = new ej15();
+        game.setNombre("Fortnite");
+
+        System.out.println("Veamos cuanto as jugado a " + game.getNombre() + " :");
+
+        game.jugar(40);
+        game.jugar(30);
+        game.jugar(30);
+
+        System.out.println("Ayer jugado un total de " + game.horasJugadas() + " horas." );
+        System.out.println("Lo que supondría un total de " + game.getMin() +  " minutos.");
+
+        game.jugar(15);
+        game.jugar(30);
+
+        System.out.println("Con lo de hoy y ayer has jugado "
+                + game.getMin() + " minutos y " + game.horasJugadas() + " horas " + "a " + game.getNombre() + ".");
+
+        System.out.println("------------------------");
+
+        //------------------------------EJ16------------------------------------
+
+        System.out.println("\n\n--EJ16--");
+        System.out.println("-CINE-");
+
+
+
+
+
+
+
+
+
+
+
     }
 }
