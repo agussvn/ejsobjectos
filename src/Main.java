@@ -1,24 +1,24 @@
-public class Main{
-    public static void main (String[] args){
+public class Main {
+    public static void main(String[] args) {
 /// //////--------------------------------EJ1---------------------------------
-      ej1 cancion1 = new ej1();
-      ej1 cancion2 = new ej1();
+        ej1 cancion1 = new ej1();
+        ej1 cancion2 = new ej1();
 
-      cancion1.setTitulo("Bohemian Rhapsody");
-      cancion1.setArtista("Freddy Mercury");
-      cancion1.setDuracion(2);
+        cancion1.setTitulo("Bohemian Rhapsody");
+        cancion1.setArtista("Freddy Mercury");
+        cancion1.setDuracion(2);
 
-      cancion2.setTitulo("Murder");
-      cancion2.setArtista("Duki");
-      cancion2.setDuracion(3);
+        cancion2.setTitulo("Murder");
+        cancion2.setArtista("Duki");
+        cancion2.setDuracion(3);
         System.out.println("\n\n--EJ1--");
 
-      System.out.println("El nombre de la cancion 1 es: " + cancion1.getTitulo());
-      System.out.println("Cantada por el gran: " + cancion1.getArtista() );
-      System.out.println("Tiene una duración de: " + cancion1.getDuracion() + "min");
+        System.out.println("El nombre de la cancion 1 es: " + cancion1.getTitulo());
+        System.out.println("Cantada por el gran: " + cancion1.getArtista());
+        System.out.println("Tiene una duración de: " + cancion1.getDuracion() + "min");
 
         System.out.println("\nEl nombre de la cancion 2 es: " + cancion2.getTitulo());
-        System.out.println("Cantada por el gran: " + cancion2.getArtista() );
+        System.out.println("Cantada por el gran: " + cancion2.getArtista());
         System.out.println("Tiene una duración de: " + cancion2.getDuracion() + "min");
 
         cancion1.setDuracion(5);
@@ -28,13 +28,13 @@ public class Main{
 
         System.out.println();
 
-        if (cancion1.getDuracion()> cancion2.getDuracion()){
-            System.out.println(cancion1.getTitulo()+ " tiene una duración mayor");
-        } else if (cancion2.getDuracion()>cancion1.getDuracion())  {
-            System.out.println(cancion2.getTitulo()+ " tiene una duración mayor");
+        if (cancion1.getDuracion() > cancion2.getDuracion()) {
+            System.out.println(cancion1.getTitulo() + " tiene una duración mayor");
+        } else if (cancion2.getDuracion() > cancion1.getDuracion()) {
+            System.out.println(cancion2.getTitulo() + " tiene una duración mayor");
         }
         System.out.println("---------------");
-    /// --------------------------EJ2--------------------------
+        /// --------------------------EJ2--------------------------
 
         ej2 pelicula1 = new ej2();
 
@@ -46,7 +46,7 @@ public class Main{
 
         System.out.println("-----------CARTELERA-----------");
         System.out.println(pelicula1.getTitulo() + " es la película más esperada de la historia, con el famoso artista "
-                + pelicula1.getArtista() + ". " + "Se estrena en " + pelicula1.getEstreno() + " y tendrá una duración de " + pelicula1.getMin() + " minutos." );
+                + pelicula1.getArtista() + ". " + "Se estrena en " + pelicula1.getEstreno() + " y tendrá una duración de " + pelicula1.getMin() + " minutos.");
 
         pelicula1.setArtista(pelicula1.getArtista().toUpperCase());
         System.out.println("\n Director Principal-Dr " + pelicula1.getArtista());
@@ -73,12 +73,12 @@ public class Main{
 
         System.out.println("\n\n--EJ3--");
         System.out.println("YOUTUBE");
-        System.out.println( yt1.getCanal() + " sube contenido relacionado con "
-                + yt1.getCategoria() + " y además tiene " +yt1.getSubs() + " millones de subscriptores.");
-        System.out.println( yt2.getCanal() + " sube contenido relacionado con "
-                + yt2.getCategoria() + " y además tiene " +yt2.getSubs() + " millones de subscriptores.");
-        System.out.println( yt3.getCanal() + " sube contenido relacionado con "
-                + yt3.getCategoria() + " y además tiene " +yt3.getSubs() + " millones de subscriptores.");
+        System.out.println(yt1.getCanal() + " sube contenido relacionado con "
+                + yt1.getCategoria() + " y además tiene " + yt1.getSubs() + " millones de subscriptores.");
+        System.out.println(yt2.getCanal() + " sube contenido relacionado con "
+                + yt2.getCategoria() + " y además tiene " + yt2.getSubs() + " millones de subscriptores.");
+        System.out.println(yt3.getCanal() + " sube contenido relacionado con "
+                + yt3.getCategoria() + " y además tiene " + yt3.getSubs() + " millones de subscriptores.");
         System.out.println("");
 
         yt2.setSubs(45);
@@ -107,7 +107,6 @@ public class Main{
         System.out.println("---------------------");
 
 
-
 //-----------------EJ5-------------------------
         System.out.println("\n\n--EJ5--");
 
@@ -125,10 +124,10 @@ public class Main{
         skin2.setVideojuego("Valorant");
 
         System.out.println("(Skin) = " + skin1.getNombre() + " , (Rareza) = "
-                + skin1.getRareza() + " , (Videojuego) = " + skin1.getVideojuego() + " , (Precio) = " +  skin1.getPrecio());
+                + skin1.getRareza() + " , (Videojuego) = " + skin1.getVideojuego() + " , (Precio) = " + skin1.getPrecio());
 
         System.out.println("(Skin) = " + skin2.getNombre() + " , (Rareza) = "
-                + skin2.getRareza() + " , (Videojuego) = " + skin2.getVideojuego() + " , (Precio) = " +  skin2.getPrecio());
+                + skin2.getRareza() + " , (Videojuego) = " + skin2.getVideojuego() + " , (Precio) = " + skin2.getPrecio());
 
         System.out.println("\nCambio de precio y rareza");
         skin1.setPrecio(10000);
@@ -212,7 +211,7 @@ public class Main{
         cancion.setTitulo("HOLA");
         cancion.setReps(0);
 
-        for (int i = 0; i< 5;i++){
+        for (int i = 0; i < 5; i++) {
             cancion.reps();
         }
 
@@ -282,10 +281,10 @@ public class Main{
         System.out.println("\n Primer PVP");
         opp.recibirHit(tu.getAtaque());
         System.out.println(tu.getNombre() + " acaba de quitar "
-                + tu.getAtaque() + " puntos de vida a " + opp.getNombre() + "." + opp.getNombre() + " se queda a " + opp.getVida() );
+                + tu.getAtaque() + " puntos de vida a " + opp.getNombre() + "." + opp.getNombre() + " se queda a " + opp.getVida());
 
         tu.recibirHit(opp.getAtaque());
-        System.out.println("Recibes " + opp.getAtaque() +" de daño " + "de " + opp.getNombre() + "." + " Te quedas a " + tu.getVida());
+        System.out.println("Recibes " + opp.getAtaque() + " de daño " + "de " + opp.getNombre() + "." + " Te quedas a " + tu.getVida());
 
         System.out.println("\n--Ronda 2: Héroe se cura--");
         tu.curarse(10);
@@ -352,8 +351,8 @@ public class Main{
         game.jugar(30);
         game.jugar(30);
 
-        System.out.println("Ayer jugado un total de " + game.horasJugadas() + " horas." );
-        System.out.println("Lo que supondría un total de " + game.getMin() +  " minutos.");
+        System.out.println("Ayer jugado un total de " + game.horasJugadas() + " horas.");
+        System.out.println("Lo que supondría un total de " + game.getMin() + " minutos.");
 
         game.jugar(15);
         game.jugar(30);
@@ -368,15 +367,45 @@ public class Main{
         System.out.println("\n\n--EJ16--");
         System.out.println("-CINE-");
 
+        ej16 e1 = new ej16();
+        e1.setTitulo("Interstellar");
+        e1.setPrecio(10);
+        e1.setEstudiante(true);
 
+        ej16 e2 = new ej16();
+        e2.setTitulo("Matrix");
+        e2.setPrecio(12);
+        e2.setEstudiante(false);
 
-
-
-
-
-
-
+        System.out.println(e1.getTitulo() + " -> " + e1.precioFinal() + "€");
+        System.out.println(e2.getTitulo() + " -> " + e2.precioFinal() + "€");
+        System.out.println("--------------------");
 
 
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

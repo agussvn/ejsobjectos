@@ -19,8 +19,11 @@ public class ej16 {
         precio=precioEntrada;
     }
 
-    public boolean Estudiante(){
+    public boolean getEstudiante(){
         return estudiante;
+    }
+    public void setEstudiante(boolean estudianteEntrada){
+        estudiante=estudianteEntrada;
     }
 
     public double precioFinal(){

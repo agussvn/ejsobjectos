@@ -28,7 +28,7 @@ public class ej8 {
     public int getRankingMundial() {
         return rankingMundial;
     }
-    public void setRankingMundial(int rankingEntrada) {
-        rankingMundial = rankingEntrada;
+     public void setRankingMundial(int rankingEntrada) {
+       rankingMundial = rankingEntrada;
     }
 }
